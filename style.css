@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-------------------------------------------------------  */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+header{
+    background-position: center;
+    background-image: url("bg-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.header-title blockquote{
+    padding-bottom: 300px;
+}
+
+.header-page .header-button{
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.header-title blockquote,
+.about-site h2{
+    font-size: 23px;
+    text-align: center;
+    padding-top: 25px;
+    color: rgb(47, 0, 255);
+}
+
+.logo-and-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(97, 140, 232, 0.5);
+    padding: 25px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 5px;
+    border-right: 2px solid wheat;
+    padding-right: 5px; 
+    font-size: 17px;
+}
+nav li a{
+    text-decoration: none;
+    color: wheat;
+}
+a[class*='-btn']{
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+    color: rgb(230, 255, 3);
+    background: rgba(97, 140, 232, 0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+a[class*='-btn']:hover{
+    background: rgba(97, 140, 232, 0.8);
+    padding: 17px;
+    color: rgb(230, 255, 70);
+}
+
+
+
+
+/*---------------  */
+
+
+.about-site {
+    background-color: rgba(97, 140, 232, 0.5);    
+}
+
+.about-site:hover {
+    background-color: rgba(97, 140, 232, 0.8);    
+}
+
+.about{    
+    background-image: url("img/bg-about.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: darkslategray;
+    padding: 50px 0;
+}
+
+.about-site .about-title {
+    margin: 0px auto;
+    font-size: 35px;
+    padding-bottom: 30px;
+    color: darkslategrey;
+}
+.about-site .about-items{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-img-icon{
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    border-radius: 50%;
+}
+
+.about-img-icon img{
+    width: 100px;
+}
+
+.about-item h3{
+    font-size: 20px;
+    padding: 7px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(230, 255, 70);
+}
+
+.about-item p{
+    text-align: center;
+}
